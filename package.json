@@ -14,6 +14,7 @@
   },
   "scripts": { 
     "start": "parcel src/index.html",
+    "prebuild": "echo $MY_SECRET",
     "build": "parcel build src/index.html"
   }
 }
