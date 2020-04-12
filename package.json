@@ -1,0 +1,15 @@
+{
+  "name": "jpv-netlifydemosite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jpvajda/netlifydemosite.git",
+  "author": "John P. Vajda <john.vajda@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
