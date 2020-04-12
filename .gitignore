@@ -1,5 +1,6 @@
-# N
+# Netlify
 .netlify
+dist
 
 # Logs
 logs"
