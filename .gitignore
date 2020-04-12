@@ -1,2 +1,3 @@
 .netlify
 yarn.lock
+node_modules
