@@ -12,4 +12,19 @@ function App() {
   )
 }
 
+function Text() { 
+  const [text, setText] = React.useState('')
+  React.useEffect(() => { 
+    fetch('/netlify/functions/node-fetch.js')
+      .then((x) => x.json())
+      .then((x) => setText(x.message))
+  })
+  return (
+    <div>
+      <p>{text}</p>
+    </div>
+  )
+}
+
 ReactDOM.render(<App></App>, document.getElementById('app'))
+ReactDOM.render(<Text></Text>, document.getElementById('text'))

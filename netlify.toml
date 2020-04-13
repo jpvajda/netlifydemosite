@@ -1,5 +1,10 @@
 # example netlify.toml 
 [build]
   command = 'yarn run build'
-  # functions = "functions"
+  functions = "functions"
   publish = 'dist'
+
+# [dev]
+#   port = 5454
+#   command = "yarn start"
+#   publish = 'src'
