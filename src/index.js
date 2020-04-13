@@ -15,7 +15,7 @@ function App() {
 function Text() { 
   const [text, setText] = React.useState('')
   React.useEffect(() => { 
-    fetch('/netlify/functions/node-fetch.js')
+    fetch('/.netlify/functions/node-fetch.js')
       .then((x) => x.json())
       .then((x) => setText(x.message))
   })
