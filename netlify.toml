@@ -5,6 +5,6 @@
   publish = 'dist'
 
 [dev]
-  port = 8000
+  port = 1234
   command = "yarn start"
   publish = 'src'
