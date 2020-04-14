@@ -1,12 +1,37 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+function encode(data) { 
+  const formData = new FormData()
+  for (const key of Object.keys(data)) { 
+    formData.append(key, data[key])
+  }
+  return formData
+}
+
 function Form() { 
-  const [count, setCount] = React.useState(0)
+  const [msg, setMsg] = React.useState(null)
+
+  const handleSubmit = e => { 
+    e.preventDefault()
+    const form = e.target
+
+    fetch('/', { 
+      method: 'POST',
+      body: encode ({ 
+       'form-name': form.getAttribute('name'),
+       name: form.name.value,
+       email: form.email.value, 
+      }),
+    })
+      .then(()=> setMsg('Success!'))
+      .catch((error) => alert(error))
+  }
 
   return (
     <div> 
-    <form name="contact" data-netlify-recaptcha="true" netlify-honeypot="bot-field" netlify action="/thankyou">
+      {msg ? msg: "Hello from React!"}
+    <form onSubmit={handleSubmit} name="contact" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
       <p class="hidden">
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
       </p>
