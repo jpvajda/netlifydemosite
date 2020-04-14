@@ -26,7 +26,10 @@
         </h2>
         <h2>Sample Netlify Form</h2>
         <div> 
-          <form name="contact" netlify action="/thankyou">
+          <form name="contact" netlify-honeypot="bot-field" netlify action="/thankyou">
+            <p class="hidden">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <p>
               <label>Name <input type="text" name="name" /></label>
             </p>

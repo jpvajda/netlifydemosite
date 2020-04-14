@@ -9,6 +9,10 @@ body {
   color: white;
 }
 
+.hidden { 
+  opacity: 0;
+}
+
 .titan-background {
   position: absolute;
   width: 100%;
