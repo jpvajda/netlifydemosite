@@ -11,11 +11,9 @@ function encode(data) {
 
 function Form() { 
   const [msg, setmsg] = React.useState(null)
-
   const handleSubmit = (e) => { 
     e.preventDefault()
     const form = e.target
-
     fetch('/', { 
       method: 'POST',
       body: encode ({ 
@@ -30,7 +28,6 @@ function Form() {
 
   return (
     <div> 
-      {msg ? msg: "Hello from React!"}
     <form onSubmit={handleSubmit} name="contact" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
       <p class="hidden">
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
