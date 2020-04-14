@@ -4,7 +4,7 @@
   functions = "functions"
   publish = 'dist'
 
-# [dev]
-#   port = 5454
-#   command = "yarn start"
-#   publish = 'src'
+[dev]
+  port = 8000
+  command = "yarn start"
+  publish = 'src'
