@@ -10,9 +10,9 @@ function encode(data) {
 }
 
 function Form() { 
-  const [msg, setMsg] = React.useState(null)
+  const [msg, setmsg] = React.useState(null)
 
-  const handleSubmit = e => { 
+  const handleSubmit = (e) => { 
     e.preventDefault()
     const form = e.target
 
@@ -24,7 +24,7 @@ function Form() {
        email: form.email.value, 
       }),
     })
-      .then(()=> setMsg('Success!'))
+      .then(()=> setmsg('Success!'))
       .catch((error) => alert(error))
   }
 
