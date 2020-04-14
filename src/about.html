@@ -26,7 +26,7 @@
         </h2>
         <h2>Sample Netlify Form</h2>
         <div> 
-          <form name="contact" netlify-honeypot="bot-field" netlify action="/thankyou">
+          <form name="contact" data-netlify-recaptcha="true" netlify-honeypot="bot-field" netlify action="/thankyou">
             <p class="hidden">
               <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
             </p>
@@ -39,6 +39,7 @@
             <p>
               <label>File <input type="file" name="fccfile"/></label>
             </p>
+              <div data-netlify-recaptcha="true"></div>
             <p>
               <button type="submit">Send</button>
             </p>
