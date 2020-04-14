@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-export function Form() { 
+function Form() { 
   const [count, setCount] = React.useState(0)
 
   return (
