@@ -28,7 +28,8 @@ function Form() {
 
   return (
     <div> 
-    <form onSubmit={handleSubmit} name="contact" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+      {msg ? msg: "Hello from React!"}
+    <form onSubmit={handleSubmit} name="contact" data-netlify-recaptcha="true" netlify-honeypot="bot-field" netlify>
       <p class="hidden">
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
       </p>
