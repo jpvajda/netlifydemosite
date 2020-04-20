@@ -30,7 +30,7 @@ function App() {
       Hello from React!
       <button onClick = {() => setCount(count +1)}>Click Me! {count}</button>
       <button onClick = {handleClick}>login</button>
-      <button onClick = {handleClick2}>AA</button>
+      <button onClick = {handleClick2}>AuthFunction</button>
 
     </div>
   )
