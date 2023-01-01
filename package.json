@@ -6,7 +6,7 @@
   "author": "John P. Vajda <john.vajda@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^2.8.2"
   },
   "dependencies": {
     "netlify-cli": "^2.47.0",
